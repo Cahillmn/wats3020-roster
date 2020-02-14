@@ -32,12 +32,13 @@ class Student extends Person {
         this.attendance = [];
 
     }
-    calculateAttendance(){
-        if (this.attendance.length >0) {
+    calculateAttendance() {
+        if (this.attendance.length > 0) {
 
         } else {
             return '0%';
-            for (mark of this.attendance) {
+            let counter = 0;
+            for (let mark of this.attendance) {
                 counter += mark;
             }
             let attendancePercentage = (counter / this.attendance,length) * 100;
